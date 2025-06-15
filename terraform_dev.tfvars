@@ -1,0 +1,20 @@
+vpc_name           = "demo-vpc"
+cidr_block         = "10.0.0.0/16"
+availability_zones = ["ap-southeast-1a", "ap-southeast-1b"]
+public_subnet_ips  = ["10.0.1.0/24", "10.0.2.0/24"]
+private_subnet_ips = ["10.0.101.0/24", "10.0.102.0/24"]
+region             = "ap-southeast-1"
+key_pair_path = "./keypair/ec2_demo_key.pub"
+key_pair_name = "ec2_demo_key_pair_1"
+instance_type = "t2.micro"
+instance_name = "ec2_demo_instance_1"
+public_sg_name = "public_security_group_1"
+public_sg_description = "public_security_group_dec_1"
+private_sg_name = "private_security_group_1"
+private_sg_description = "private_security_group_dec_1"
+# 
+environment = "dev"
+app_name = "My app"
+private_instance_type = "t2.micro"
+private_instance_name = "private_ec2_demo_instance_1"
+enable_nat_gateway = false
